@@ -1,0 +1,76 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta id="viewport" name="viewport" content="width=540,user-scalable=no,target-densitydpi=high-dpi" />
+		
+		<script data-main="js/main" src="require.js?3"></script>
+		<title>一個都不能死-暴走小遊戲</title>
+        <meta name="description" content="" />
+    <meta name="keywords" content="" />
+		<style type="text/css">
+			body{
+		        margin:0px;
+		        padding:0px;
+		        overflow: hidden;
+		    }
+		</style>
+		<script language=javascript>
+
+		var mebtnopenurl = '';
+		function dp_submitScore(m,t){
+		}
+		
+		function dp_share(t){
+            window.location.href="objc://"+"rateGame"; // by michael
+			window.shareData.caption = t/1000+"秒！不行了，我都快变双重人格了！这游戏实在太虐心了！";
+		}
+
+		function dp_share2(t){
+            window.location.href="objc://"+"rateGame"; // by michael
+			window.shareData.caption = t/1000+"秒！不行了，我都快变双重人格了！这游戏实在太虐心了！";
+			FB.ui({
+				method: 'feed',
+				name: window.shareData.name,
+				link: window.shareData.link,
+				picture: window.shareData.picture,
+				caption: window.shareData.caption,
+				description: window.shareData.description,
+			}, function(response) {});
+		}
+        function dp_Ranking(){
+            window.location.href="objc://"+"rateGame"; // by michael
+//			window.location=mebtnopenurl;
+		}
+
+		function showAd(){
+		}
+		function hideAd(){
+		}
+
+		</script>
+		
+<script language=javascript>
+//window.setTimeout("help()",1000);
+function help(){
+		window.location="";
+}
+</script>		
+
+	</head>
+	<body>
+		<div style="text-align:center;" >
+			<canvas id="linkScreen">
+<!--				很遗憾，您的浏览器不支持HTML5，请使用支持HTML5的浏览器。-->
+			</canvas>
+		</div>
+
+<div id=share style="display:none">
+<img id=logo  width=100% src="img/logo.jpg"  style="position:absolute;top:0;left:0;">
+</div>
+		
+
+		
+	</body>
+</html>
