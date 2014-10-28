@@ -17,7 +17,7 @@ function show_ad() {
         // gadsDiv.width = document.body.clientWidth;
         // gadsDiv.left = 0;
         // gadsDiv.bottom = 0;
-        alert(window.innerWidth);
+        // alert(window.innerWidth);
         if (is_mobile && !big_ad) {
             window.google_ad_client = "ca-pub-1667278402120283";
             window.google_ad_slot = "4046453012";
