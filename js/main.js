@@ -2140,7 +2140,7 @@ var link, jsGame;
                                                      f.action(0, u + (s + 1) * n, i, n, -8).render();
                                                      if (f.hostDied) {
                                                      l.died = !0, l.dieDate = Date.now(), l.shine = r.get(0).mark(f.host.x, f.host.y - 20).setStep(2);
-                                                     window.location.href="objc://"+"gameOver"; // by michael
+                                                     //window.location.href="objc://"+"gameOver"; // by michael
                                                      break
                                                      }
                                                      }
